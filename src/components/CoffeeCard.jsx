@@ -30,7 +30,7 @@ export default function CoffeeCard({ coffee }) {
         <p className="text-lg px-8 font-bold text-cocoa-brown">
           {coffee.price}
         </p>
-        <button className="bg-cocoa-brown hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full">
+        <button className="bg-cocoa-brown hover:bg-desert-sand text-white font-bold py-2 px-8 rounded-full">
           Buy
         </button>
       </div>

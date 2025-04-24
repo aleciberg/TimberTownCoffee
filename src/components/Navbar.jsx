@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,10 +19,13 @@ export default function NavBar() {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6 text-sm font-medium">
-          <li className="hover:text-amber-400 transition">Home</li>
+          {/* <li className="hover:text-amber-400 transition">Home</li>
           <li className="hover:text-amber-400 transition">Shop</li>
           <li className="hover:text-amber-400 transition">About</li>
-          <li className="hover:text-amber-400 transition">Contact</li>
+          <li className="hover:text-amber-400 transition">Contact</li> */}
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/cart">Cart</Link>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -36,10 +40,13 @@ export default function NavBar() {
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
         <ul className="md:hidden mt-4 px-6 py-4 bg-[#493B2A] space-y-4 text-sm font-medium">
-          <li className="hover:text-amber-400 transition">Home</li>
+          {/* <li className="hover:text-amber-400 transition">Home</li>
           <li className="hover:text-amber-400 transition">Shop</li>
           <li className="hover:text-amber-400 transition">About</li>
-          <li className="hover:text-amber-400 transition">Contact</li>
+          <li className="hover:text-amber-400 transition">Contact</li> */}
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/cart">Cart</Link>
         </ul>
       )}
     </nav>

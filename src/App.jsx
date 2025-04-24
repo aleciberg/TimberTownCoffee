@@ -1,25 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import products from "./products";
-import NavBar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedCoffees from "./components/FeaturedCoffees";
-import About from "./components/AboutSection";
-import Contact from "./components/ContactSection";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <FeaturedCoffees products={products} />
-      <About />
-      <Contact />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      /* <Route path="/shop" element={<Shop />} />
+      {/* <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/cart" element={<Cart />} /> */}
+    </Routes>
   );
 }
 
