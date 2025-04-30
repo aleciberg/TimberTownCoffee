@@ -1,4 +1,5 @@
 import Background from "../assets/hero-image.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -18,9 +19,12 @@ export default function Hero() {
           <p className="text-lg md:text-xl max-w-xl mb-6">
             Freshly roasted. Hand-rolled. Hippie Speedball.
           </p>
-          <button className="bg-[#D06D3F] hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
+          <Link
+            className="bg-cocoa-brown hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+            to="/shop"
+          >
             Shop Coffee
-          </button>
+          </Link>
         </div>
       </div>
     </section>

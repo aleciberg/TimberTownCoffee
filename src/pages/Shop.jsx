@@ -1,25 +1,3 @@
-// import Layout from "../components/Layout";
-// import CoffeeCard from "../components/CoffeeCard";
-// import products from "../products";
-
-// export default function Shop() {
-//   return (
-//     <Layout>
-//       <section className="w-full h-full">
-//         <div>Shop header</div>
-//         <div className="w-full">
-//           {products.map((coffee) => (
-//             <div key={coffee.id} className="">
-//               <CoffeeCard coffee={coffee} />
-//             </div>
-//           ))}
-//         </div>
-//         <div>Shop other</div>
-//       </section>
-//     </Layout>
-//   );
-// }
-
 import Layout from "../components/Layout";
 import CoffeeCard from "../components/CoffeeCard";
 import products from "../products";
@@ -36,7 +14,7 @@ export default function Shop() {
           {products.map((coffee) => (
             <div
               key={coffee.id}
-              className="rounded-2xl shadow-lg overflow-hidden"
+              className="rounded-2xl shadow-lg overflow-hidden hover:bg-[#5c4a34]"
             >
               <CoffeeCard coffee={coffee} />
             </div>
