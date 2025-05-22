@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Layout from "../components/Layout";
+import CartTable from "../components/CartTable";
+import { useCart } from "../context/CartContext";
 
 export default function Cart() {
-  const [customerCart, setCustomerCart] = useState([]); // thinking about state
-
+  const { cart, addToCart, removeFromCart, getTotal } = useCart();
   return (
     <Layout>
       <section>
-        <div>Cart Page</div>
-        <div>Display Cart Items Here</div>
+        <CartTable
+          cart={cart}
+          total={getTotal(cart)}
+          removeFromCart={removeFromCart}
+        />
       </section>
     </Layout>
   );

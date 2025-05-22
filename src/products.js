@@ -10,7 +10,7 @@ const products = [
   {
     id: 1,
     name: "Colombia Luz Divia Fierro",
-    price: "$20",
+    price: 20,
     desc: "pineapple, hibiscus, honeycomb",
     location: "Huila",
     elevation: "1650m",
@@ -21,7 +21,7 @@ const products = [
   {
     id: 2,
     name: "Ethiopia Layo Teraga",
-    price: "$19",
+    price: 19,
     desc: "peach, cotton candy, hibiscus",
     location: "Guji",
     elevation: "2342m",
@@ -32,7 +32,7 @@ const products = [
   {
     id: 3,
     name: "Honduras David Las Flores",
-    price: "$19",
+    price: 19,
     desc: "guava, apple blossom, panela",
     location: "Santa Barbara",
     elevation: "1620m",
@@ -43,7 +43,7 @@ const products = [
   {
     id: 4,
     name: "Phono",
-    price: "$14",
+    price: 19,
     desc: "black cherry, bosc pear, fudge",
     location: "Tolima",
     elevation: "1450m",
@@ -54,7 +54,7 @@ const products = [
   {
     id: 5,
     name: "Stereo Blend",
-    price: "$14",
+    price: 14,
     desc: "fig, blackberry jam, fudge",
     location: "50% Colombia/50% Kenya",
     elevation: "",
@@ -65,7 +65,7 @@ const products = [
   {
     id: 6,
     name: "Honduras Anibal Pineda",
-    price: "$17",
+    price: 17,
     desc: "red grape, cherry blossom, toffee",
     location: "Santa Barbara",
     elevation: "1550m",
@@ -76,7 +76,7 @@ const products = [
   {
     id: 7,
     name: "Kenya Nyawira",
-    price: "$18",
+    price: 18,
     desc: "blood orange, cola, maple",
     location: "Embu",
     elevation: "1400m",

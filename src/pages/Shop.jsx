@@ -1,8 +1,12 @@
 import Layout from "../components/Layout";
 import CoffeeCard from "../components/CoffeeCard";
 import products from "../products";
+import { useCart } from "../context/CartContext";
+import { useContext } from "react";
 
 export default function Shop() {
+  const { cart, addToCart } = useCart();
+  console.log(cart);
   return (
     <Layout>
       <section className="w-full max-w-7xl mx-auto px-4 py-8">

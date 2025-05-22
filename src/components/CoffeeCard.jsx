@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { useCart } from "../context/CartContext";
+
 export default function CoffeeCard({ coffee }) {
+  const { addToCart } = useCart();
   return (
     <div className="bg-white-smoke border border-taupe rounded-lg p-4 shadow-md w-[300px] mx-auto">
       <div className="mb-4">
@@ -30,7 +34,10 @@ export default function CoffeeCard({ coffee }) {
         <p className="text-lg px-8 font-bold text-cocoa-brown">
           {coffee.price}
         </p>
-        <button className="bg-cocoa-brown hover:bg-desert-sand text-white font-bold py-2 px-8 rounded-full">
+        <button
+          className="bg-cocoa-brown hover:bg-desert-sand text-white font-bold py-2 px-8 rounded-full"
+          onClick={() => addToCart(coffee)}
+        >
           Buy
         </button>
       </div>
